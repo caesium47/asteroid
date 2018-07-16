@@ -1,0 +1,10 @@
+var Canvas = Class.extend({
+
+  init: function(width, height) {
+    this.canvas = document.createElement("canvas");
+    this.canvas.width = width;
+    this.canvas.height = height;
+    
+    this.ctx = (function(ctx) {
+      return ctx;
+    })(this.canvas.get
